@@ -9,7 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  widgetbook: ^3.3.0
+
+  # Currently the main branch is used to include some fixes.
+  # TODO: replace with the latest stable version.
+  widgetbook:
+    git:
+      url: https://github.com/widgetbook/widgetbook.git
+      path: packages/widgetbook
+      ref: main
 
 dev_dependencies:
   flutter_test:
